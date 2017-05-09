@@ -1,0 +1,51 @@
+CS 354 Final Project Proposal
+
+Project: Convolution Neural Network for 3D Models
+
+Papers & References:
+    - https://link.springer.com/chapter/10.1007/978-3-540-89689-0_31
+    - https://arxiv.org/pdf/1603.08637.pdf
+    - https://www.shapenet.org/
+
+Project Members:
+    - Carlos Trevino
+
+Proposal:
+    I'm focusing mainly on building a convolution neural network for classifying
+    3D models. However if time permits, I would also like to implement a
+    generative deconvolution network for this classifier in order to generate
+    3D objects from the labels used to train the original CNN classifier. This
+    could be used to generate simple representations of 3D objects or to
+    transform 2D drawing or images into 3D objects based on the networks basic
+    understanding of 3D models and the help of an image classifier. It's most
+    likely a long stretch for the amount of time I have to dedicate to the
+    project but I've worked on similar networks within different fields.
+
+    Just to give a vague intro, to the idea and the use of CNNs to classify and
+    generate objects, you could think of the multiple image classifying projects
+    Google has been working with in recent years. From their GoogleLeNet to the
+    recently released AutoDraw used to generate accurate 2D vectors from
+    doodles.
+
+    Similar to ImageNet for ordinary image classifiers, I'm planning on using
+    ShapeNet to train my neural network. Just like ImageNet, ShapeNet is a large
+    scale dataset of 3D models usually used to train CV and robotics' models.
+    I'm hoping to use python if allowed to run the classifier if allowed, given
+    that I'm more comfortable building neural networks on it. However, I am open
+    to build the classifier on C++ or run on a Python + C++ hybrid - either one
+    should run fine with OpenGL to read and render models.
+
+    As far as the neural network goes - I'm planning on building an encoder and
+    decoder of sorts to transform my 3D models into voxels in order to remove as
+    much error as possible and to simplify the classification of complex shapes.
+    In other words the neural network would be trained to classify 3D voxel
+    models which could potentially be turned from/to 3D model objects compatible
+    with OpenGL.
+
+    I already have a fair understanding of convolutional neural networks and how
+    to generate generative neural networks; however, I would like to use this
+    project to learn about using encoders and compilers to enhance the use of
+    neural networks with more complex objects, in this case 3D models. This
+    techniques if proven successful, could not only help with dealing with some
+    of the inaccuracies in neural networks but could also help with training
+    classifiers for even more complex things like websites or apps.
